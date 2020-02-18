@@ -10,7 +10,7 @@ services:
     MONGODB_DATABASE: rsvpdata
    networks:
     - rsvpnet
-
+    
  web:
    image: teamcloudyuga/rsvpapp:mooc
    ports:
@@ -18,7 +18,7 @@ services:
    environment:
     MONGODB_HOST: mongodb
     LINK: http://www.meetup.com/cloudyuga/
-    TEXT1: CloudYuga 
+    TEXT1: CloudYuga !
     TEXT2: Garage RSVP!
     LOGO: https://raw.githubusercontent.com/cloudyuga/rsvpapp/master/static/cloudyuga.png
     COMPANY: CloudYuga Technology Pvt. Ltd.
